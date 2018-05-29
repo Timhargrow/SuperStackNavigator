@@ -4,14 +4,19 @@ import {
   StyleSheet,
   Text,
   View,
-  AppRegistry
+  AppRegistry,
+  Button
 } from 'react-native';
 
 class HomeScreen extends React.Component {
+  static navigationOptions = {
+    header: null
+  }
   render() {
     return (
       <View style={styles.container}>
         <Text> This is the Home Screen </Text>
+        <Button title="go back to the Login Screen" onPress={()=>this.props.navigation.goBack()}/>
       </View>
     );
   }

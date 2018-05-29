@@ -9,6 +9,9 @@ import {
 } from 'react-native';
 
 class LoginScreen extends React.Component {
+  static navigationOptions = {
+    header: null
+  }
   render() {
     return (
       <View style={styles.container}>
