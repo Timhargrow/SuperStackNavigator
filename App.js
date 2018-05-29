@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
+  Platform,
   StyleSheet,
   Text,
   View,
+  AppRegistry
 } from 'react-native';
 import {createStackNavigator} from 'react-navigation';
-import {LoginScreen} from './Screens/LoginScreen';
-import {HomeScreen} from './Screens/HomeScreen';
+import LoginScreen from './Screens/LoginScreen';
+import HomeScreen from './Screens/HomeScreen';
 export default class App extends React.Component{
   render() {
     return (
@@ -17,7 +19,7 @@ export default class App extends React.Component{
 
 const AppStackNavigator = createStackNavigator({
   Login: LoginScreen,
-  Home:  HomeScreen,
+  Home:  HomeScreen
 })
 
 const styles = StyleSheet.create({

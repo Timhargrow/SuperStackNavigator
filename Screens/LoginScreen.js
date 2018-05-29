@@ -11,7 +11,7 @@ class LoginScreen extends React.Component {
   render() {
     return (
       <View>
-        <Text> This is the login Screen </Text>
+        <Text> This is the Login Screen!!! </Text>
       </View>
     );
   }
