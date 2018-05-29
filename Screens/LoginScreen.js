@@ -4,16 +4,28 @@ import {
   StyleSheet,
   Text,
   View,
-  AppRegistry
+  AppRegistry,
+  Button
 } from 'react-native';
 
 class LoginScreen extends React.Component {
   render() {
     return (
-      <View>
-        <Text> This is the Login Screen!!! </Text>
+      <View style={styles.container}>
+        <Text>Welcome To The Login Screen!</Text>
+        <Button title="Go To Home Screen"
+          onPress={()=> this.props.navigation.navigate('Home')}/>
       </View>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+  },
+});
 export default LoginScreen;
