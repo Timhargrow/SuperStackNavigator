@@ -7,15 +7,13 @@ import {
   AppRegistry
 } from 'react-native';
 
-type Props = {};
-export default class HomeScreen extends React.Component {
+class HomeScreen extends React.Component {
   render() {
     return (
       <View>
-        <Text> This is the the HomeScreen </Text>
+        <Text> This is the login Screen </Text>
       </View>
     );
   }
 }
-
-AppRegistry.registerComponent('HomeScreen', () => CustomComponent);
+export default HomeScreen;

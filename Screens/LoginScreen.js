@@ -7,7 +7,7 @@ import {
   AppRegistry
 } from 'react-native';
 
-export default class LoginScreen extends React.Component {
+class LoginScreen extends React.Component {
   render() {
     return (
       <View>
@@ -16,4 +16,4 @@ export default class LoginScreen extends React.Component {
     );
   }
 }
-AppRegistry.registerComponent('LoginScreen', () => CustomComponent);
+export default LoginScreen;
